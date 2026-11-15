@@ -7,6 +7,7 @@ import { env } from "./config/env";
 
 
 import customerRoutes from "./routes/customer.routes";
+import projectRoutes from "./routes/project.routes";
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use("/api/customers", customerRoutes);
+app.use("/api/projects", projectRoutes);
 
 // HTTP request logging
 app.use(morgan("dev"));
