@@ -12,6 +12,7 @@ const challanFields = [
   "challanDate",
   "challanType",
   "status",
+  "project",
   "poWorkOrderReference",
   "poDate",
   "responsiblePerson",
