@@ -10,6 +10,7 @@ import customerRoutes from "./routes/customer.routes";
 import projectRoutes from "./routes/project.routes";
 import deliveryChallanRoutes from "./routes/deliveryChallan.routes";
 import serviceReportRoutes from "./routes/serviceReport.routes";
+import serviceBillRoutes from "./routes/serviceBill.routes";
 
 const app = express();
 
@@ -33,6 +34,7 @@ app.use("/api/customers", customerRoutes);
 app.use("/api/projects", projectRoutes);
 app.use("/api/delivery-challans", deliveryChallanRoutes);
 app.use("/api/service-reports", serviceReportRoutes);
+app.use("/api/service-bills", serviceBillRoutes);
 // HTTP request logging
 app.use(morgan("dev"));
 
