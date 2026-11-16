@@ -8,6 +8,7 @@ import { env } from "./config/env";
 
 import customerRoutes from "./routes/customer.routes";
 import projectRoutes from "./routes/project.routes";
+import deliveryChallanRoutes from "./routes/deliveryChallan.routes";
 
 const app = express();
 
@@ -29,7 +30,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/customers", customerRoutes);
 app.use("/api/projects", projectRoutes);
-
+app.use("/api/delivery-challans", deliveryChallanRoutes);
 // HTTP request logging
 app.use(morgan("dev"));
 
