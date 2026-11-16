@@ -11,6 +11,7 @@ import projectRoutes from "./routes/project.routes";
 import deliveryChallanRoutes from "./routes/deliveryChallan.routes";
 import serviceReportRoutes from "./routes/serviceReport.routes";
 import serviceBillRoutes from "./routes/serviceBill.routes";
+import customerPaymentRoutes from "./routes/customerPayment.routes";
 
 const app = express();
 
@@ -35,6 +36,7 @@ app.use("/api/projects", projectRoutes);
 app.use("/api/delivery-challans", deliveryChallanRoutes);
 app.use("/api/service-reports", serviceReportRoutes);
 app.use("/api/service-bills", serviceBillRoutes);
+app.use("/api/customer-payments", customerPaymentRoutes);
 // HTTP request logging
 app.use(morgan("dev"));
 
